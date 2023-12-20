@@ -2,6 +2,7 @@
 
 class Persona {
   public $nombre;
+  private $edad;
 
   public function asignarNombre ($nuevoNombre) {
     $this->nombre = $nuevoNombre;
@@ -11,6 +12,10 @@ class Persona {
     echo "<br>".$this->nombre;
   }
 
+  public function mostrarEdad () {
+    return $this->edad = 20;
+  }
+
 }
 
 $objHumano = new Persona();
@@ -18,6 +23,8 @@ $objHumano = new Persona();
 $objHumano->asignarNombre("lulu");
 
 echo $objHumano->nombre;
+// echo $objHumano->edad;
+echo $objHumano->mostrarEdad();
 
 echo $objHumano->imprimirNombre();
 echo $objHumano->imprimirNombre();
